@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    
+    --primary-color: rgb(7, 64, 130);
+    --btn-color: rgb(29, 24, 107);
+    --dark-shade: rgb(66, 53, 206);
+    --light-shade: rgb(238, 237, 253);
+    --grey: rgb(211, 211, 245);
+    --bg-blue: rgb(189, 189, 209);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--grey);
+    background-color: var(--bg-blue);
+}
+
+.user-card {
+    width: 350px;
+    padding: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 14px;
+    background-color: var(--light-shade);
+    box-shadow: 0 3px 8px var(--dark-shade);
+}
+
+.avatar {
+    padding: 5px;
+    width: 160px;
+    border-radius: 90px;
+    filter: brightness(70%);
+    border: 3px solid var(--primary-color);
+}
+
+.user-details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 14px 14px;
+}
+
+.username {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.user-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.user-location img {
+    height: 1rem;
+    filter: invert();
+}
+
+.action-buttons {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-buttons button {
+    width: 100px;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 black;
+}
+
+.action-buttons button:hover {
+    transform: translateY(-3px);
+    color: white;
+    background-color: var(--btn-color);
+}
+
+.user-skills {
+    margin-top: 30px 0;
+    padding: 1rem 0;
+    border-top: 2px solid var(--dark-shade);
+}
+
+.user-skills h2 {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.skills-list {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list li {
+    border: 1px solid var(--dark-shade);
+    border-radius: 0.52px;
+    cursor: pointer;
+    padding: 0.1rem 1rem;
+    margin: 2px 0;
+    font-size: 0.8rem;
+    border-radius: 0.4rem;
+    display: inline-block;
+    color: var(--light-shade);
+}
